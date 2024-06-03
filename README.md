@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate for Nextjs 14 app using Tailwindcss and Shadcn/ui with PrismaORM
 
-## Getting Started
+## Requirement
+Nodejs 18+ and NPM
 
-First, run the development server:
-
+## Installation
+First clone the project
+use NPM ( in my case ) to install the project
 ```bash
+git clone https://github.com/tuon1602/nextjs-14---boilerplate.git
+cd nextjs-14---boilerplate
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+## Features
+- [Nextjs 14](https://nextjs.org/) ( of course it's core )
+- [TailwindCss](https://tailwindcss.com/) + [Shadcn/Ui](https://ui.shadcn.com/) for better UI experience
+- [PrismaORM](https://www.prisma.io/) for interacting with database
+- [React Query](https://tanstack.com/query/latest/docs/framework/react/overview) for fetching client side
+- [NextAuth V5](https://authjs.dev/getting-started) for authentication and authorization
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) for global state management
+- [Zod](https://zod.dev/) + [React-Hook-Form](https://react-hook-form.com/) for form validation
+- [Lucide-icons](https://lucide.dev/icons/) for icons
+- [Next-safe-action](https://next.next-safe-action.dev/) for server action type safe
+- Testing with [Jest](https://jestjs.io/docs/getting-started)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### I will update this docs later, please support me <3
