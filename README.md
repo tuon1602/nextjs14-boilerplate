@@ -20,3 +20,5 @@ npm run dev
 - [Lucide-icons](https://lucide.dev/icons/) for icons
 - [Next-safe-action](https://next.next-safe-action.dev/) for server action type safe
 - Testing with [Jest](https://jestjs.io/docs/getting-started)
+
+### I will update this docs later, please support me <3
