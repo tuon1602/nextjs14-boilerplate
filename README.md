@@ -1,5 +1,8 @@
 # Boilerplate for Nextjs 14 app using Tailwindcss and Shadcn/ui with PrismaORM
 
+## Requirement
+Nodejs 18+ and NPM
+
 ## Installation
 First clone the project
 use NPM ( in my case ) to install my project
