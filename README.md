@@ -10,13 +10,13 @@ npm install
 npm run dev
 ```
 ## Features
-- Nextjs 14 ( of course it's core )
-- TailwindCss + Shadcn/Ui ( combo UI library )
-- PrismaORM for interacting with database
-- React Query for fetching client side
-- NextAuth for authentication and authorization
-- Zustand for global state management
-- Zod + React-Hook-Form for form validation
-- Lucide-icons for icons
-- next-safe-action for server action type safe
-- Testing with Jest
+- [Nextjs 14](https://nextjs.org/) ( of course it's core )
+- [TailwindCss](https://tailwindcss.com/) + [Shadcn/Ui](https://ui.shadcn.com/) for better UI experience
+- [PrismaORM](https://www.prisma.io/) for interacting with database
+- [React Query](https://tanstack.com/query/latest/docs/framework/react/overview) for fetching client side
+- [NextAuth V5](https://authjs.dev/getting-started) for authentication and authorization
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) for global state management
+- [Zod](https://zod.dev/) + [React-Hook-Form](https://react-hook-form.com/) for form validation
+- [Lucide-icons](https://lucide.dev/icons/) for icons
+- [Next-safe-action](https://next.next-safe-action.dev/) for server action type safe
+- Testing with [Jest](https://jestjs.io/docs/getting-started)
