@@ -1,6 +1,6 @@
-#Boilerplate for nextjs 14 app using tailwindcss and shadcn/ui with PrismaORM
+# Boilerplate for nextjs 14 app using tailwindcss and shadcn/ui with PrismaORM
 
-##Installation
+## Installation
 First clone the project
 use NPM ( in my case ) to install my project
 ```bash
@@ -9,7 +9,7 @@ cd nextjs-14---boilerplate
 npm install
 npm run dev
 ```
-##Features
+## Features
 - Nextjs 14 ( of course it's core )
 - TailwindCss + Shadcn/Ui ( combo UI library )
 - PrismaORM for interacting with database
