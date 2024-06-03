@@ -19,3 +19,4 @@ npm run dev
 - Zod + React-Hook-Form for form validation
 - Lucide-icons for icons
 - next-safe-action for server action type safe
+- Testing with Jest
