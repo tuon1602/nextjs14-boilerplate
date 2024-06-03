@@ -1,4 +1,4 @@
-# Boilerplate for nextjs 14 app using tailwindcss and shadcn/ui with PrismaORM
+# Boilerplate for Nextjs 14 app using Tailwindcss and Shadcn/ui with PrismaORM
 
 ## Installation
 First clone the project
