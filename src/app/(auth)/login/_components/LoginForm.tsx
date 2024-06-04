@@ -5,7 +5,7 @@ import { styles } from '@/app/theme/common'
 
 const LoginForm = () => {
   return (
-    <div className={cn(styles.heading , "container text-center")}>LoginForm</div>
+    <div className="heading container">LoginForm</div>
   )
 }
 

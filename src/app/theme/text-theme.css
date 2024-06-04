@@ -1,0 +1,10 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .heading{
+        @apply text-5xl text-balance font-extrabold tracking-tight;
+    }
+}
