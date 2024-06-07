@@ -1,8 +1,11 @@
 import React from 'react'
+import {ThemeToggle} from './ThemeToggle'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <section>
+      This is navbar
+    </section>
   )
 }
 

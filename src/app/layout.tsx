@@ -6,6 +6,8 @@ import { auth } from "@/auth";
 import { CounterStoreProvider } from "@/providers/counter-store-provider";
 import { redirect } from "next/navigation";
 import Scroll from "@/components/ScrollToTop";
+import { ThemeProvider } from "@/providers/theme-provider";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +23,20 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <Scroll />
         <CounterStoreProvider>
           <ReactQueryProvider>
-            <main>{children}</main>
+            <ThemeProvider
+              enableSystem
+              defaultTheme="system"
+              attribute="class"
+            >
+              <main>
+                <Navbar />
+                {children}
+              </main>
+            </ThemeProvider>
           </ReactQueryProvider>
         </CounterStoreProvider>
       </body>

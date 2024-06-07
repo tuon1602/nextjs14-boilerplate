@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Profile from "@/components/Profile";
 import SignOutButton from "../components/SignOutButton";
 import SignInButton from "@/components/SignInButton";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Profile />
         <SignOutButton />
         <SignInButton />
+        <ThemeToggle/>
       </main>
       
     </>
