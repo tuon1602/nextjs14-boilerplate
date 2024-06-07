@@ -1,4 +1,4 @@
 export const styles = {
-     heading:"text-5xl text-balance font-extrabold tracking-tight"
+     heading:"xl:text-5xl text-4xl text-balance font-extrabold tracking-tight"
 }
    

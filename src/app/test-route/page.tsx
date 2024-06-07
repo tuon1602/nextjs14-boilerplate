@@ -5,8 +5,8 @@ import TestZustand from "./_components/TestZustand";
 const TestPage = () => {
   return (
     <>
-      {/* <Photos /> */}
-      <TestZustand/>
+      <Photos />
+      {/* <TestZustand/> */}
     </>
   );
 };
