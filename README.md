@@ -7,7 +7,7 @@ Nodejs 18+ and NPM
 First clone the project
 use NPM ( in my case ) to install the project
 ```bash
-git clone https://github.com/tuon1602/nextjs-14---boilerplate.git
+git clone https://github.com/tuon1602/nextjs-14---boilerplate.git "Your app name"
 cd nextjs-14---boilerplate
 npm install
 npm run dev
