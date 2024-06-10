@@ -8,6 +8,7 @@ import { redirect } from "next/navigation";
 import Scroll from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default async function RootLayout({
               <main>
                 <Navbar />
                 {children}
+                <Toaster richColors duration={2000}/>
               </main>
             </ThemeProvider>
           </ReactQueryProvider>

@@ -4,6 +4,7 @@ import Profile from "@/components/Profile";
 import SignOutButton from "../components/SignOutButton";
 import SignInButton from "@/components/SignInButton";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import FormActionTest from "@/components/FormActionTest";
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
         <SignOutButton />
         <SignInButton />
         <ThemeToggle/>
+        <div className="mt-5">
+          <h2 className="heading-2">Form action</h2>
+          <FormActionTest/>
+        </div>
       </main>
       
     </>
