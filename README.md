@@ -20,6 +20,7 @@ npm run dev
 - [NextAuth V5](https://authjs.dev/getting-started) for authentication and authorization
 - [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) for global state management
 - [Zod](https://zod.dev/) + [React-Hook-Form](https://react-hook-form.com/) for form validation
+- [i18n](https://next-intl-docs.vercel.app/) Added language modlification for the project 
 - [Lucide-icons](https://lucide.dev/icons/) for icons
 - [Next-safe-action](https://next.next-safe-action.dev/) for server action type safe
 - Testing with [Jest](https://jestjs.io/docs/getting-started)
