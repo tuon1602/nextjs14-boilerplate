@@ -8,6 +8,9 @@ import { redirect } from "next/navigation";
 import Scroll from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/sonner";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,24 +24,29 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className} suppressHydrationWarning>
         <Scroll />
-        <CounterStoreProvider>
-          <ReactQueryProvider>
-            <ThemeProvider
-              enableSystem
-              defaultTheme="system"
-              attribute="class"
-            >
-              <main>
-                <Navbar />
-                {children}
-              </main>
-            </ThemeProvider>
-          </ReactQueryProvider>
-        </CounterStoreProvider>
+        <NextIntlClientProvider messages={messages}>
+          <CounterStoreProvider>
+            <ReactQueryProvider>
+              <ThemeProvider
+                enableSystem
+                defaultTheme="system"
+                attribute="class"
+              >
+                <main>
+                  <Navbar />
+                  {children}
+                  <Toaster richColors duration={2000} />
+                </main>
+              </ThemeProvider>
+            </ReactQueryProvider>
+          </CounterStoreProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
