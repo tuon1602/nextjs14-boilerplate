@@ -16,7 +16,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center space-y-10 p-24">
         <h1 className="text-6xl">{t("title")}</h1>
         <ChangeLanguage/>
-        <Button>This button is from Shadcn/ui</Button>
+        <Button>{t("demo-button")}</Button>
         <Profile />
         <SignOutButton />
         <SignInButton />
