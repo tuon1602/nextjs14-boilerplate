@@ -12,6 +12,13 @@ cd nextjs-14---boilerplate
 npm install
 npm run dev
 ```
+## Build
+I'm currently using docker for building, so you need to install docker app first then use these commands
+```bash
+docker build -t "Your app name" .
+docker run -p 3000:3000 "Your app name"
+```
+
 ## Features
 - [Nextjs 14](https://nextjs.org/) ( of course it's core )
 - [TailwindCss](https://tailwindcss.com/) + [Shadcn/Ui](https://ui.shadcn.com/) for better UI experience
