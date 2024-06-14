@@ -10,17 +10,19 @@ export const yourActionName = (prevState: any, formData: FormData) => {
     password: formData.get("password"),
   });
   if (validation.success) {
-    console.log(validation.data)
+    console.log(validation.data);
     //interacting with db
     return {
-      code:200,
+      code: 200,
       error: "Validation successful!",
     };
   } else {
-    const beautyError = validation.error.issues.map((err) => err.message).join(`\n`)
+    const beautyError = validation.error.issues
+      .map((err) => err.message)
+      .join(`\n`);
     return {
-      code:403,
-      error: beautyError
+      code: 403,
+      error: beautyError,
     };
   }
 };

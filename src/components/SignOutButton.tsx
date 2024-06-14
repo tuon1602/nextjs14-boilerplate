@@ -1,11 +1,10 @@
-
 import React from "react";
 import { signOutAction } from "@/app/actions/logoutAction";
 import { Button } from "./ui/button";
 import { auth } from "@/auth";
 
 const SignOutButton = async () => {
-  const session =  await auth();
+  const session = await auth();
   return (
     <>
       {" "}

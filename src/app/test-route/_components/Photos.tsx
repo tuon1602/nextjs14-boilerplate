@@ -64,7 +64,7 @@ const Photos = () => {
               {item.title}
             </li>
           ))}
-        <Button onClick={()=>mutation.mutate()}>Add a post</Button>
+        <Button onClick={() => mutation.mutate()}>Add a post</Button>
       </ul>
     </div>
   );

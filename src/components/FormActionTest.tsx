@@ -25,7 +25,9 @@ const FormActionTest = () => {
         <Input type="text" name="name" placeholder="123" />
         <Input type="password" name="password" placeholder="••••••••" />
         <Button type="submit">Signup</Button>
-        {state?.error && <p className="text-destructive whitespace-pre-line">{state?.error}</p>}
+        {state?.error && (
+          <p className="text-destructive whitespace-pre-line">{state?.error}</p>
+        )}
       </form>
     </>
   );

@@ -10,7 +10,11 @@ import ChangeLanguage from "@/components/ChangeLanguage";
 import { getAnimals } from "./actions/getAnimals";
 import { getTranslations } from "next-intl/server";
 import FetchAnimals from "@/components/FetchAnimals";
-import { HydrationBoundary, QueryClient, dehydrate } from "@tanstack/react-query";
+import {
+  HydrationBoundary,
+  QueryClient,
+  dehydrate,
+} from "@tanstack/react-query";
 
 export default async function Home() {
   const queryClient = new QueryClient();

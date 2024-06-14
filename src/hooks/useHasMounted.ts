@@ -1,14 +1,14 @@
-"use client"
-import {useEffect, useState} from "react"
+"use client";
+import { useEffect, useState } from "react";
 
 const useHasMounted = () => {
-  const [hasMounted, setHasMounted] = useState(false)
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
-    setHasMounted(true)
-  }, [])
+    setHasMounted(true);
+  }, []);
 
-  return hasMounted
-}
+  return hasMounted;
+};
 
-export default useHasMounted
+export default useHasMounted;

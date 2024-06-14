@@ -1,19 +1,18 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .heading{
-        @apply text-4xl xl:text-5xl text-balance font-extrabold tracking-tight;
-    }
-    .heading-2{
-        @apply text-3xl font-semibold tracking-tight
-    }
-    .heading-3{
-        @apply text-2xl font-semibold tracking-tight
-    }
-    .paragraph{
-        @apply leading-7 [&:not(:first-child)]:mt-6
-    }
+@layer components {
+  .heading {
+    @apply text-4xl xl:text-5xl text-balance font-extrabold tracking-tight;
+  }
+  .heading-2 {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+  .heading-3 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+  .paragraph {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
 }

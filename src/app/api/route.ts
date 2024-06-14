@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const runtime = 'edge'
+export const runtime = "edge";
 
 // route handlers
 export async function GET() {

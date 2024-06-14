@@ -6,7 +6,7 @@ const TestPage = () => {
   return (
     <>
       {/* <Photos /> */}
-      <TestZustand/>
+      <TestZustand />
     </>
   );
 };

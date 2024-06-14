@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const useFetch = <T, >(url: string) => {
+const useFetch = <T>(url: string) => {
   const [data, setData] = useState<T | null>(null);
   const [isLoading, setIsLoading] = useState<Boolean>(true);
   const [error, setError] = useState<Error | null>(null);
@@ -9,10 +9,10 @@ const useFetch = <T, >(url: string) => {
     const getData = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch(url,{
-          next:{
-            revalidate:100
-          }
+        const res = await fetch(url, {
+          next: {
+            revalidate: 100,
+          },
         });
         if (!res.ok) throw new Error(`Error fetching data`);
         const data = await res.json();

@@ -8,9 +8,7 @@ export default async function SignInButton() {
       {" "}
       {!session ? (
         <form action={signin}>
-          <Button type="submit">
-            Sign in
-          </Button>
+          <Button type="submit">Sign in</Button>
         </form>
       ) : null}
     </>
