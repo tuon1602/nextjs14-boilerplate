@@ -10,8 +10,8 @@ First clone the project
 use NPM ( in my case ) to install the project
 
 ```bash
-git clone https://github.com/tuon1602/nextjs-14---boilerplate.git "Your app name"
-cd nextjs-14---boilerplate
+git clone https://github.com/tuon1602/nextjs14-boilerplate.git "Your app name"
+cd "Your app name"
 npm install
 npm run dev
 ```
