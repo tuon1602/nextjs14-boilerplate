@@ -3,19 +3,24 @@
 import { z } from "zod";
 import { action } from "@/lib/safe-action";
 import { zfd } from "zod-form-data";
-const schema = zfd.formData({
-  username: zfd.text(z.string().min(3)),
-  password: zfd.text(z.string().min(10).max(100)),
-});
-
-export const yourActionName = action(schema, async ({ username, password }) => {
-  if (!username || !password) {
+import { actionSchema } from "../schema";
+export const yourActionName = (prevState: any, formData: FormData) => {
+  const validation = actionSchema.safeParse({
+    name: formData.get("name"),
+    password: formData.get("password"),
+  });
+  if (validation.success) {
+    console.log(validation.data)
+    //interacting with db
     return {
-      error: "Please fill username or password",
+      code:200,
+      error: "Validation successful!",
+    };
+  } else {
+    const beautyError = validation.error.issues.map((err) => err.message).join(`\n`)
+    return {
+      code:403,
+      error: beautyError
     };
   }
-  console.log("action fire!", username, password);
-  return {
-    sucess: { username, password },
-  };
-});
+};

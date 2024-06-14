@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
-import { auth } from "@/auth";
-import { CounterStoreProvider } from "@/providers/counter-store-provider";
-import { redirect } from "next/navigation";
 import Scroll from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Navbar from "@/components/Navbar";
@@ -31,21 +28,15 @@ export default async function RootLayout({
       <body className={inter.className} suppressHydrationWarning>
         <Scroll />
         <NextIntlClientProvider messages={messages}>
-          <CounterStoreProvider>
-            <ReactQueryProvider>
-              <ThemeProvider
-                enableSystem
-                defaultTheme="system"
-                attribute="class"
-              >
-                <main>
-                  <Navbar />
-                  {children}
-                  <Toaster richColors duration={2000} />
-                </main>
-              </ThemeProvider>
-            </ReactQueryProvider>
-          </CounterStoreProvider>
+          <ReactQueryProvider>
+            <ThemeProvider enableSystem defaultTheme="system" attribute="class">
+              <main>
+                <Navbar />
+                {children}
+              </main>
+              <Toaster richColors position="top-center" />
+            </ThemeProvider>
+          </ReactQueryProvider>
         </NextIntlClientProvider>
       </body>
     </html>

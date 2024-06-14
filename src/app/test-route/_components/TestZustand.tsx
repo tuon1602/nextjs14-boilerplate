@@ -1,18 +1,16 @@
 "use client";
 
 import React from "react";
-import { useCounterStore } from "@/providers/counter-store-provider";
+import { useBearStore } from "@/stores/bear-store";
 import { Button } from "@/components/ui/button";
 
 const TestZustand = () => {
-  const { count, incrementCount, decrementCount } = useCounterStore(
-    (state) => state
-  );
+  const { bears, increase, removeAllBears } = useBearStore();
   return (
     <div>
-      count:{count}
-      <Button onClick={() => incrementCount()}>Increase</Button>
-      <Button onClick={() => decrementCount()}>Decrease</Button>
+      bears:{bears}
+      <Button onClick={() => increase()}>+1 bear</Button>
+      <Button onClick={() => removeAllBears()}>reset bear to 0</Button>
     </div>
   );
 };
