@@ -4,6 +4,7 @@
       "Select-Language":"Choose your language",
       "demo-button" : "This button is from Shadcn/Ui",
       "en":"English",
-      "vn":"Vietnamese"
+      "vn":"Vietnamese",
+      "about-page":"About page"
     }
   }

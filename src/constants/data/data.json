@@ -1,0 +1,40 @@
+{
+  "animals": [
+    {
+      "type": "bear",
+      "species": "Ursus arctos",
+      "commonName": "Brown Bear",
+      "diet": "Omnivore",
+      "habitat": "Forests, Mountains",
+      "characteristics": {
+        "color": "Brown",
+        "size": "Large",
+        "weight": "300-700 kg"
+      }
+    },
+    {
+      "type": "duck",
+      "species": "Anas platyrhynchos",
+      "commonName": "Mallard",
+      "diet": "Omnivore",
+      "habitat": "Wetlands, Ponds, Lakes",
+      "characteristics": {
+        "color": "Green head (males), Brown (females)",
+        "size": "Medium",
+        "weight": "0.7-1.6 kg"
+      }
+    },
+    {
+      "type": "duck",
+      "species": "Anas platyrhynchos",
+      "commonName": "Tuấn",
+      "diet": "Omnivore",
+      "habitat": "Wetlands, Ponds, Lakes",
+      "characteristics": {
+        "color": "Green head (males), Brown (females)",
+        "size": "Medium",
+        "weight": "0.7-1.6 kg"
+      }
+    }
+  ]
+}
