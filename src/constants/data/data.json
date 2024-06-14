@@ -35,6 +35,18 @@
         "size": "Medium",
         "weight": "0.7-1.6 kg"
       }
+    },
+    {
+      "type": "duck",
+      "species": "Anas platyrhynchos",
+      "commonName": "Tuấn 1",
+      "diet": "Omnivore",
+      "habitat": "Wetlands, Ponds, Lakes",
+      "characteristics": {
+        "color": "Green head (males), Brown (females)",
+        "size": "Medium",
+        "weight": "0.7-1.6 kg"
+      }
     }
   ]
 }
