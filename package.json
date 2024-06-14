@@ -1,7 +1,11 @@
 {
   "name": "next-app-boilerplate",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "author": {
+    "name": "Tuon1602",
+    "email": "tuan69878@gmail.com",
+    "url": "https://github.com/tuon1602"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
