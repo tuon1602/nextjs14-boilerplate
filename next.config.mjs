@@ -6,12 +6,12 @@ const withNextIntl = createNextIntlPlugin();
 // stales time for prefetching server side data
 const nextConfig = {
   output: "standalone",
-  experimental: {
-    staleTimes: {
-      dynamic: 5,
-      static: 300,
-    },
-  },
+  // experimental: {
+  //   staleTimes: {
+  //     dynamic: 5,
+  //     static: 300,
+  //   },
+  // },
 };
 
 export default withNextIntl(nextConfig);
