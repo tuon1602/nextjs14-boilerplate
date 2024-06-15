@@ -1,0 +1,148 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "code 1234444",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Learning React and next",
+      "author": "Dan Abramov"
+    },
+    {
+      "id": 3,
+      "title": "Understanding Redux",
+      "author": "Andrew Clark"
+    },
+    {
+      "id": 4,
+      "title": "Advanced JavaScript",
+      "author": "Douglas Crockford"
+    },
+    {
+      "id": 5,
+      "title": "Node.js in Action",
+      "author": "Mike Cantelon"
+    },
+    {
+      "id": 7,
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford"
+    },
+    {
+      "id": 9,
+      "title": "Clean Code",
+      "author": "Robert C. Martin"
+    },
+    {
+      "id": 10,
+      "title": "You Don't Know JS",
+      "author": "Kyle Simpson"
+    },
+    {
+      "id": 5421,
+      "title": "I dont know js",
+      "author": "Tuanbebu"
+    },
+    {
+      "id": 879,
+      "title": "I dont know js",
+      "author": "Tuanbebu"
+    },
+    {
+      "id": 3710,
+      "title": "typescript",
+      "author": "44444"
+    },
+    {
+      "id": 5224,
+      "title": "shadcn ui",
+      "author": "tuanbebu2001"
+    },
+    {
+      "id": 8950,
+      "title": "shadcn 123",
+      "author": "3123213123"
+    },
+    {
+      "id": 123232323,
+      "title": "shadcn 123",
+      "author": "3123213123"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "great article",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "body": "very helpful",
+      "postId": 3
+    },
+    {
+      "id": 4,
+      "body": "learned a lot",
+      "postId": 4
+    },
+    {
+      "id": 5,
+      "body": "excellent explanation",
+      "postId": 5
+    },
+    {
+      "id": 7,
+      "body": "well written",
+      "postId": 7
+    },
+    {
+      "id": 9,
+      "body": "fantastic read",
+      "postId": 9
+    },
+    {
+      "id": 10,
+      "body": "love this",
+      "postId": 10
+    }
+  ],
+  "profile": [
+    {
+      "name": "typicode"
+    },
+    {
+      "name": "Dan Abramov"
+    },
+    {
+      "name": "Andrew Clark"
+    },
+    {
+      "name": "Douglas Crockford"
+    },
+    {
+      "name": "Mike Cantelon"
+    },
+    {
+      "name": "Azat Mardan"
+    },
+    {
+      "name": "Scott Chacon"
+    },
+    {
+      "name": "Robert C. Martin"
+    },
+    {
+      "name": "Kyle Simpson"
+    },
+    {
+      "name": "Jane Doe"
+    }
+  ]
+}

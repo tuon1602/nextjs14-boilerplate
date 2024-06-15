@@ -31,7 +31,7 @@ export default async function RootLayout({
           <ReactQueryProvider>
             <ThemeProvider enableSystem defaultTheme="system" attribute="class">
               <main>
-                <Navbar />
+                {/* <Navbar /> */}
                 {children}
               </main>
               <Toaster richColors position="top-center" />

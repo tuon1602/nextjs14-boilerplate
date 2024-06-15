@@ -15,32 +15,46 @@ import {
   QueryClient,
   dehydrate,
 } from "@tanstack/react-query";
+import { getPosts } from "./actions/json-server/getPosts";
+import FetchPosts from "@/components/FetchPosts";
+import PostForm from "@/components/PostForm";
+
 
 export default async function Home() {
+  // const posts: IPosts[] = await getPosts();
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
     queryKey: ["animals"],
     queryFn: getAnimals,
   });
+  await queryClient.prefetchQuery({
+    queryKey: ["posts"],
+    queryFn: getPosts,
+  });
   const t = await getTranslations("Index");
   return (
     <>
       {" "}
       <main className="flex min-h-screen flex-col items-center space-y-10 p-24">
-        <h1 className="text-6xl">{t("title")}</h1>
-        <ChangeLanguage />
-        <Button>{t("demo-button")}</Button>
-        <Profile />
+        {/* <h1 className="text-6xl">{t("title")}</h1> */}
+        <h1 className="heading">TodoApp</h1>
+        {/* <ChangeLanguage /> */}
+        {/* <Button>{t("demo-button")}</Button> */}
+        {/* <Profile />
         <SignOutButton />
         <SignInButton />
         <ThemeToggle />
         <div className="mt-5">
           <h2 className="heading-2">Form action</h2>
           <FormActionTest />
-        </div>
+        </div> */}
 
         <HydrationBoundary state={dehydrate(queryClient)}>
+          <div>
+            <FetchPosts/>
+            <PostForm/>
+          </div>
           <div className="mt-5">
             <FetchAnimals />
           </div>

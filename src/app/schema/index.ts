@@ -17,3 +17,9 @@ export const actionSchema = z.object({
     .string({ required_error: "Your password is required" })
     .min(4, { message: "Your password be at least 4 characters" }),
 });
+
+
+export const PostSchema = z.object({
+  title: z.string().min(2).max(50),
+  author: z.string().min(5),
+});
