@@ -18,10 +18,11 @@ import {
 import { quickSort } from "@/helpers/quickSort";
 import { mergeSort } from "@/helpers/mergeSort";
 import { findIndexOfArray } from "@/helpers/findIndexOfArray";
+import MyChart from "@/components/charts/MyChart";
 
 export default async function Home() {
-  const helperArray = [9,5,4,7,1,11,22,55]
-  console.log(findIndexOfArray(helperArray,9))
+  const helperArray = [9, 5, 4, 7, 1, 11, 22, 55];
+  console.log(findIndexOfArray(helperArray, 9));
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
@@ -50,6 +51,7 @@ export default async function Home() {
             <FetchAnimals />
           </div>
         </HydrationBoundary>
+        <MyChart/>
       </main>
     </>
   );
