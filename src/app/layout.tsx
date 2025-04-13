@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,12 +22,11 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const locale = await getLocale();
-  const messages = await getMessages();
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning lang={locale}>
       <body className={inter.className}>
         <Scroll />
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider>
           <ReactQueryProvider>
             <ThemeProvider enableSystem defaultTheme="system" attribute="class">
               <main lang={locale}>

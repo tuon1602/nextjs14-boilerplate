@@ -31,9 +31,10 @@ export default async function Home() {
     <>
       {" "}
       <main className="flex min-h-screen flex-col items-center space-y-10 p-24">
-        <h1 className="text-6xl">{t("title")}</h1>
+        <h1 className="text-6xl text-red-100">{t("title")}</h1>
         <ChangeLanguage />
         <Button>{t("demo-button")}</Button>
+        <button className="bg-primary"> button tailwind</button>
         <ThemeToggle />
         <div className="mt-5">
           <h2 className="heading-2">Form action</h2>

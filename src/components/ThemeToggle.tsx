@@ -18,7 +18,7 @@ export function ThemeToggle() {
           onClick={() => setTheme("dark")}
           className="flex justify-center items-center"
         >
-          <Sun className="h-5 w-5" />
+          <Sun className="h-10 w-10" />
         </Button>
       ) : (
         <Button
