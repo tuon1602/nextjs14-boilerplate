@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import "../theme/text-theme.css";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
-import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,8 +17,6 @@ export default async function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const session = await auth();
-  if (session) redirect("/");
   return (
     <ReactQueryProvider>
       <section>

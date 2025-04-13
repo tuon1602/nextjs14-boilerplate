@@ -24,13 +24,13 @@ export default async function RootLayout({
   const locale = await getLocale();
   const messages = await getMessages();
   return (
-    <html lang={locale}>
-      <body className={inter.className} suppressHydrationWarning>
+    <html suppressHydrationWarning>
+      <body className={inter.className}>
         <Scroll />
         <NextIntlClientProvider messages={messages}>
           <ReactQueryProvider>
             <ThemeProvider enableSystem defaultTheme="system" attribute="class">
-              <main>
+              <main lang={locale}>
                 <Navbar />
                 {children}
               </main>

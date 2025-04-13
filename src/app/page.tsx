@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Profile from "@/components/Profile";
-import SignOutButton from "../components/SignOutButton";
-import SignInButton from "@/components/SignInButton";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import FormActionTest from "@/components/FormActionTest";
 import { useTranslations } from "next-intl";
@@ -37,9 +34,6 @@ export default async function Home() {
         <h1 className="text-6xl">{t("title")}</h1>
         <ChangeLanguage />
         <Button>{t("demo-button")}</Button>
-        <Profile />
-        <SignOutButton />
-        <SignInButton />
         <ThemeToggle />
         <div className="mt-5">
           <h2 className="heading-2">Form action</h2>

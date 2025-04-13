@@ -4,7 +4,7 @@ import { z } from "zod";
 import { action } from "@/lib/safe-action";
 import { zfd } from "zod-form-data";
 import { actionSchema } from "../schema";
-export const yourActionName = (prevState: any, formData: FormData) => {
+export const yourActionName = async (prevState: any, formData: FormData) => {
   const validation = actionSchema.safeParse({
     name: formData.get("name"),
     password: formData.get("password"),

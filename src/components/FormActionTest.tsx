@@ -4,11 +4,11 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Toaster, toast } from "sonner";
 import React, { useEffect, useRef } from "react";
-import { useFormState } from "react-dom";
+import { useActionState } from "react";
 import type { ZodError } from "zod";
 
 const FormActionTest = () => {
-  const [state, action] = useFormState(yourActionName, null);
+  const [state, action] = useActionState(yourActionName, null);
   const formRef = useRef<HTMLFormElement>(null);
   // useEffect(() => {
   //   if (state?.code === 200) {
