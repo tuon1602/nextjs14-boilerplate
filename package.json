@@ -32,7 +32,6 @@
     "lucide-react": "^0.383.0",
     "moment": "^2.30.1",
     "next": "^15.3.0",
-    "next-auth": "^5.0.0-beta.19",
     "next-intl": "^3.15.0",
     "next-safe-action": "^6.2.0",
     "next-themes": "^0.3.0",
