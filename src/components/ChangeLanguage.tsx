@@ -29,13 +29,13 @@ const ChangeLanguage = () => {
       router.refresh();
     });
   };
-  const currentLanguage = getCookie("language");
+  const currentLanguage = getCookie("language") as string | undefined;
   return (
     <div>
       <Select
         onValueChange={handleChangeLanguage}
         disabled={isPending}
-        defaultValue={currentLanguage ? currentLanguage : "en"}
+        defaultValue={currentLanguage ?? "en"}
       >
         <SelectTrigger className="w-[180px]">
           <SelectValue placeholder={t("Select-Language")} />
