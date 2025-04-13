@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"],weight:"400" });
 
 export const metadata: Metadata = {
   title: "Tuon's Next app boilerplate",
