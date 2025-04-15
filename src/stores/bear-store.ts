@@ -27,6 +27,6 @@ export const useBearStore = create<BearState>()(
     {
       name: "bears-storage",
       storage: createJSONStorage(() => localStorage),
-    }
-  )
+    },
+  ),
 );

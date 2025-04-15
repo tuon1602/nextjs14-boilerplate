@@ -8,6 +8,6 @@ export const findIndexOfArray = (arr: number[], target: number) => {
   // return "No number found"
 
   //cách 2
-  const result = arr.findIndex((num, index) => (num === target));
-  return result !== -1 ? result : "no number found"
+  const result = arr.findIndex((num, index) => num === target);
+  return result !== -1 ? result : "no number found";
 };

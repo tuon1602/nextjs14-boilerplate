@@ -13,9 +13,8 @@ interface ITodo {
   updateTodo: () => void;
 }
 
-
 // export const useTodoStore = create<ITodo>()(
 //     persist(
-        
+
 //     )
 // )
