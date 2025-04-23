@@ -14,7 +14,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
-    "typecheck":"tsc --project tsconfig.json --pretty --noEmit && echo"
+    "typecheck": "tsc --project tsconfig.json --pretty --noEmit && echo"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
@@ -52,6 +52,7 @@
     "@tanstack/react-query": "^5.73.3",
     "@tanstack/react-query-devtools": "^5.73.3",
     "autoprefixer": "^10.4.21",
+    "better-auth": "^1.2.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",

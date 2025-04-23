@@ -1,12 +1,9 @@
+import React from 'react'
 
-import React from "react";
-
-const DashboardPage = () => {
+const AdminPage = () => {
   return (
-    <main className="min-h-screen p-8 ">
-      wtf
-    </main>
-  );
-};
+    <div>AdminPage</div>
+  )
+}
 
-export default DashboardPage;
+export default AdminPage
